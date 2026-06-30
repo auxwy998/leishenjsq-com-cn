@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷神加速器官方下载 - 专业游戏加速器电脑版 按时计费 免费试用</title>
+    <meta name="description" content="雷神加速器官方下载站，提供最新版v3.2.1电脑版免费下载。自研加速引擎，2万+赛事级专线节点，覆盖全球5000+游戏，支持PC/主机/手游七端通用，分钟计费随时暂停不用不扣，一键解决延迟高、丢包、掉线问题。">
+    <meta name="keywords" content="雷神加速器下载,雷神加速器电脑版,雷神加速器PC版,雷神加速器官方下载,游戏加速器下载,按时计费加速器,Steam加速器,外服加速器">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="雷神（武汉）网络技术有限公司">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    
+    <!-- Schema.org WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "雷神加速器",
+        "description": "雷神加速器官方下载站，提供最新版v3.2.1电脑版免费下载。自研加速引擎，2万+赛事级专线节点，覆盖全球5000+游戏",
+        "url": "https://leishenjsq.com.cn",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows 10+, macOS 11+, Android 6.0+, iOS 13+",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "25000000"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --primary: #3b82f6;
+            --primary-light: #60a5fa;
+            --accent: #06b6d4;
+            --text-white: #f8fafc;
+            --text-gray: #94a3b8;
+            --text-light: #cbd5e1;
+            --border: #334155;
+            --success: #22c55e;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        a {
+            color: var(--primary-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: var(--accent);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a365d 50%, var(--bg-dark) 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--text-white), var(--primary-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+        
+        .hero-subtitle span {
+            margin: 0 10px;
+            color: var(--border);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.5);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-white);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-light);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        /* Software Info Bar */
+        .software-info {
+            background: var(--bg-card);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .info-content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .info-item strong {
+            color: var(--text-light);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-white);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        /* Screenshots */
+        .screenshots {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
+        }
+        
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .screenshot-card {
+            background: linear-gradient(135deg, var(--bg-card), #0f172a);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .screenshot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .screenshot-placeholder {
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .screenshot-placeholder::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(59, 130, 246, 0.1) 50%, transparent 60%);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+        
+        .screenshot-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .screenshot-label {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .screenshot-desc {
+            padding: 12px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+        
+        /* Pain Points */
+        .pain-points {
+            background: var(--bg-card);
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .pain-card {
+            background: var(--bg-dark);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .pain-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .pain-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .pain-problem {
+            color: #ef4444;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        
+        .pain-solution {
+            color: var(--success);
+            font-size: 0.9rem;
+        }
+        
+        /* Core Features */
+        .features {
+            background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .feature-card {
+            background: var(--bg-dark);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+        
+        .feature-desc {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        /* Tech Section */
+        .tech-section {
+            background: var(--bg-card);
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .tech-card {
+            background: var(--bg-dark);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tech-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--accent));
+        }
+        
+        .tech-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+        
+        .tech-desc {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Download Steps */
+        .download-steps {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
+        }
+        
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .step-card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .step-desc {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Games Matrix */
+        .games-section {
+            background: var(--bg-card);
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+        
+        .game-card {
+            background: var(--bg-dark);
+            border-radius: 10px;
+            padding: 20px 15px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .game-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .game-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .game-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .game-effect {
+            font-size: 0.8rem;
+            color: var(--success);
+        }
+        
+        /* Pricing */
+        .pricing {
+            background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .price-card {
+            background: var(--bg-dark);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            border: 2px solid var(--border);
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-card.featured {
+            border-color: var(--primary);
+            background: linear-gradient(180deg, rgba(59, 130, 246, 0.1) 0%, var(--bg-dark) 100%);
+        }
+        
+        .price-card.featured::before {
+            content: '推荐';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 4px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .price-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .price-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            margin-bottom: 5px;
+        }
+        
+        .price-unit {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        
+        .price-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .price-features li {
+            padding: 8px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .price-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        .new-user-gift {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(6, 182, 212, 0.2));
+            border: 1px solid var(--success);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .new-user-gift h4 {
+            color: var(--success);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .new-user-gift p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Reviews */
+        .reviews {
+            background: var(--bg-card);
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        
+        .review-card {
+            background: var(--bg-dark);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .review-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        .review-user {
+            font-weight: 500;
+        }
+        
+        .review-user span {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            font-weight: normal;
+        }
+        
+        .review-stars {
+            color: #fbbf24;
+            margin-bottom: 10px;
+        }
+        
+        .review-text {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: 18px 20px;
+            background: none;
+            border: none;
+            color: var(--text-white);
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: var(--bg-card-hover);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-light);
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-answer-content {
+            padding: 0 20px 18px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Download Platforms */
+        .platforms {
+            background: var(--bg-card);
+        }
+        
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .platform-card {
+            background: var(--bg-dark);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 2px solid var(--border);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .platform-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .platform-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .platform-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .platform-version {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+        
+        .platform-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .platform-btn:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-light);
+        }
+        
+        .footer-copyright {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        
+        /* Fixed Bottom Bar */
+        .fixed-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.98));
+            backdrop-filter: blur(10px);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid var(--border);
+            z-index: 1000;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .fixed-bottom-bar span {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        
+        .fixed-bottom-bar .btn {
+            padding: 10px 25px;
+            font-size: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .screenshot-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .pain-grid,
+            .feature-grid,
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .platforms-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero-subtitle span {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .trust-badges {
+                gap: 15px;
+                font-size: 0.85rem;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .screenshot-grid,
+            .pain-grid,
+            .feature-grid,
+            .tech-grid,
+            .platforms-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .games-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .steps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .step-card {
+                max-width: 100%;
+            }
+            
+            .info-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .fixed-bottom-bar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 20px;
+            }
+            
+            .fixed-bottom-bar span {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Footer padding for fixed bar */
+        .footer-padding {
+            height: 70px;
+        }
+    </style>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3QPwJGWv6tLFUJHj",ck:"3QPwJGWv6tLFUJHj"})</script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>雷神加速器 · 专治游戏卡顿</h1>
+            <p class="hero-subtitle">
+                专为全球游戏玩家打造 <span>|</span> 2万+赛事级专线 <span>|</span> 5000+游戏覆盖 <span>|</span> 按时计费不用不扣
+            </p>
+            <div class="hero-buttons">
+                <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="btn btn-primary">
+                    💻 免费下载Windows版
+                </a>
+                <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968545_583" class="btn btn-secondary">
+                    📱 下载Android版
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">2500万+</div>
+                    <div class="stat-label">玩家信赖</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20000+</div>
+                    <div class="stat-label">全球专线节点</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">游戏支持</div>
+                </div>
+            </div>
+            <div class="trust-badges">
+                <div class="trust-badge">⭐ App Store 4.8分</div>
+                <div class="trust-badge">🏆 3DM推荐加速器</div>
+                <div class="trust-badge">🔒 银行级加密</div>
+                <div class="trust-badge">🕹️ Steam/Epic全覆盖</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Software Info Bar -->
+    <div class="software-info">
+        <div class="container info-content">
+            <div class="info-item">
+                <strong>版本：</strong>v3.2.1
+            </div>
+            <div class="info-item">
+                <strong>安装包：</strong>118MB
+            </div>
+            <div class="info-item">
+                <strong>更新日期：</strong>2026-06-28
+            </div>
+            <div class="info-item">
+                <strong>系统：</strong>Win10+/macOS 11+
+            </div>
+            <div class="info-item">
+                <strong>开发商：</strong>雷神（武汉）网络技术有限公司
+            </div>
+            <div class="info-item">
+                <strong>官网：</strong>leigod.com
+            </div>
+        </div>
+    </div>
+    
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">软件界面预览</h2>
+            <p class="section-subtitle">简洁易用的加速界面，轻松掌控游戏网络</p>
+            <div class="screenshot-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">🎮</div>
+                        <div class="screenshot-label">推荐尺寸: 400×300px</div>
+                    </div>
+                    <div class="screenshot-desc">加速面板主界面</div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">⚡</div>
+                        <div class="screenshot-label">推荐尺寸: 400×300px</div>
+                    </div>
+                    <div class="screenshot-desc">游戏加速详情页</div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">🎯</div>
+                        <div class="screenshot-label">推荐尺寸: 400×300px</div>
+                    </div>
+                    <div class="screenshot-desc">游戏库搜索界面</div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">📊</div>
+                        <div class="screenshot-label">推荐尺寸: 400×300px</div>
+                    </div>
+                    <div class="screenshot-desc">网络性能监控</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pain Points Section -->
+    <section class="pain-points">
+        <div class="container">
+            <h2 class="section-title">四大核心痛点 一键解决</h2>
+            <p class="section-subtitle">针对游戏网络问题，提供专业解决方案</p>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">🐢</div>
+                    <div class="pain-problem">延迟 >100ms</div>
+                    <div class="pain-solution">智能选路+全球专线，延迟降低至5ms内</div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">📦</div>
+                    <div class="pain-problem">丢包率 >10%</div>
+                    <div class="pain-solution">冗余发包&双通道备份，丢包率低于0.5%</div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🔌</div>
+                    <div class="pain-problem">频繁掉线</div>
+                    <div class="pain-solution">不掉线保护，网络波动自动重连</div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🚫</div>
+                    <div class="pain-problem">无法连接外服</div>
+                    <div class="pain-solution">全域解锁日服/美服/欧服/东南亚服</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Core Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">六大核心功能</h2>
+            <p class="section-subtitle">专业级游戏加速体验，满足各类玩家需求</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3 class="feature-title">按时计费</h3>
+                    <p class="feature-desc">分钟计时，随时暂停，不用不扣费，每小时仅¥0.5，经济实惠</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">一键加速</h3>
+                    <p class="feature-desc">全自动识别游戏，智能匹配最优节点，3秒进入低延迟状态</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">七端通用</h3>
+                    <p class="feature-desc">Windows/Mac/Android/iOS/主机/路由器/NN端时长互通</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">5000+游戏</h3>
+                    <p class="feature-desc">PC端游/手游/主机/VR全覆盖，持续更新中，新游戏第一时间支持</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">银行级专线</h3>
+                    <p class="feature-desc">金融级内网专网技术，数据传输安全稳定，保障游戏体验</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Steam工具</h3>
+                    <p class="feature-desc">免费加速/一键下载/史低查询/跨区入库/自动挂卡等8大功能</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tech Section -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">不只是换IP · 全程网络优化</h2>
+            <p class="section-subtitle">自研加速引擎，20000+赛事级专线节点覆盖全球</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3 class="tech-title">🎯 智能游戏识别</h3>
+                    <p class="tech-desc">自动检测游戏进程，匹配最佳加速策略，无需手动配置</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="tech-title">🛤️ 专线隧道传输</h3>
+                    <p class="tech-desc">独立通道避开公共网络拥堵，数据直达游戏服务器</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="tech-title">📦 数据压缩重传</h3>
+                    <p class="tech-desc">智能压缩+预判重传，降低带宽消耗，提升传输效率</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="tech-title">⚖️ 多节点负载均衡</h3>
+                    <p class="tech-desc">20000+节点智能调度，实时监控负载，避免单点拥堵</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="tech-title">🔐 私有协议优化</h3>
+                    <p class="tech-desc">自研游戏加速协议，延迟降低80%+，稳定性提升3倍</p>
+                </div>
+                <div class="tech-card">
+                    <h3 class="tech-title">🛡️ 防劫持保护</h3>
+                    <p class="tech-desc">DNS防污染+UDP防劫持，连接更纯净，告别网络劫持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Download Steps -->
+    <section class="download-steps">
+        <div class="container">
+            <h2 class="section-title">三步开始加速</h2>
+            <p class="section-subtitle">简单三步，轻松告别游戏卡顿</p>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">下载安装包</h3>
+                    <p class="step-desc">点击上方下载按钮，获取最新安装包，支持Windows/Mac/Android/iOS多平台</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">安装并登录</h3>
+                    <p class="step-desc">支持手机号/微信/QQ一键登录，新用户即送24小时免费体验时长</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">选择游戏加速</h3>
+                    <p class="step-desc">搜索游戏 → 选择区服 → 一键加速，3秒进入游戏，低延迟畅玩</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Games Matrix -->
+    <section class="games-section">
+        <div class="container">
+            <h2 class="section-title">热门游戏支持</h2>
+            <p class="section-subtitle">覆盖全球5000+游戏，热门游戏第一时间支持</p>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">⚔️</div>
+                    <div class="game-name">英雄联盟</div>
+                    <div class="game-effect">延迟 <20ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <div class="game-name">APEX英雄</div>
+                    <div class="game-effect">延迟 <30ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🔫</div>
+                    <div class="game-name">CS2</div>
+                    <div class="game-effect">延迟 <15ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🦈</div>
+                    <div class="game-name">绝地求生</div>
+                    <div class="game-effect">延迟 <25ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">⚔️</div>
+                    <div class="game-name">永劫无间</div>
+                    <div class="game-effect">延迟 <20ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">💥</div>
+                    <div class="game-name">VALORANT</div>
+                    <div class="game-effect">延迟 <15ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🌟</div>
+                    <div class="game-name">命运2</div>
+                    <div class="game-effect">延迟 <40ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">💀</div>
+                    <div class="game-name">暗黑破坏神</div>
+                    <div class="game-effect">延迟 <35ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🌸</div>
+                    <div class="game-name">原神</div>
+                    <div class="game-effect">延迟 <30ms</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎲</div>
+                    <div class="game-name">Steam游戏</div>
+                    <div class="game-effect">全品类支持</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🏛️</div>
+                    <div class="game-name">Epic游戏</div>
+                    <div class="game-effect">全品类支持</div>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <div class="game-name">Switch游戏</div>
+                    <div class="game-effect">主机加速</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">灵活计费方案</h2>
+            <p class="section-subtitle">按需选择，总有一款适合你</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3 class="price-name">按时计费</h3>
+                    <div class="price-value">¥0.5</div>
+                    <div class="price-unit">每小时</div>
+                    <ul class="price-features">
+                        <li>分钟级精确计时</li>
+                        <li>随时暂停不用不扣</li>
+                        <li>适合轻度游戏玩家</li>
+                        <li>新用户首充双倍</li>
+                    </ul>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="btn btn-secondary">立即使用</a>
+                </div>
+                <div class="price-card featured">
+                    <h3 class="price-name">月卡（推荐）</h3>
+                    <div class="price-value">¥25</div>
+                    <div class="price-unit">30天有效</div>
+                    <ul class="price-features">
+                        <li>30天无限使用</li>
+                        <li>支持所有游戏</li>
+                        <li>专属客服优先通道</li>
+                        <li>月均不足1元/天</li>
+                    </ul>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="btn btn-primary">立即购买</a>
+                </div>
+                <div class="price-card">
+                    <h3 class="price-name">年卡</h3>
+                    <div class="price-value">¥268</div>
+                    <div class="price-unit">365天 / 低至¥22/月</div>
+                    <ul class="price-features">
+                        <li>全年无限畅玩</li>
+                        <li>额外赠送30天时长</li>
+                        <li>优先体验新功能</li>
+                        <li>最超值的加速方案</li>
+                    </ul>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="btn btn-secondary">立即购买</a>
+                </div>
+            </div>
+            <div class="new-user-gift">
+                <h4>🎁 新人福利</h4>
+                <p>首次下载即送24小时免费体验时长，畅享专业级加速服务</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">玩家真实评价</h2>
+            <p class="section-subtitle">2500万+玩家的共同选择</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">陈</div>
+                        <div class="review-user">大学生·小陈<span> · 5星</span></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"美服APEX之前200ms，用了雷神直接60ms，吃鸡率翻倍！"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">杰</div>
+                        <div class="review-user">主机玩家·阿杰<span> · 5星</span></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Switch喷喷3终于不掉线了，雷神加速器YYDS！"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">卢</div>
+                        <div class="review-user">上班族·Lucas<span> · 5星</span></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"按时计费太香了，下班玩两把一个月花费不到30块" </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">林</div>
+                        <div class="review-user">电竞选手·小林<span> · 5星</span></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"CS2训练赛延迟稳定在15ms以内，专业选手首选加速器"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">优</div>
+                        <div class="review-user">留学生·Yuki<span> · 5星</span></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"日服原神从300ms降到30ms，在国外也能畅玩国服了"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <p class="section-subtitle">您关心的问题，我们为您解答</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">雷神加速器和VPN有什么区别？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            雷神加速器是专门针对游戏场景优化的加速器，与普通VPN有本质区别：<br><br>
+                            ① <strong>专线路由</strong>：雷神使用游戏专属服务器和路由策略，绕过公网拥堵<br>
+                            ② <strong>协议优化</strong>：自研游戏加速协议，针对游戏数据包进行专项优化<br>
+                            ③ <strong>低延迟</strong>：专线传输延迟比VPN降低60%以上<br>
+                            ④ <strong>不掉线保护</strong>：独有的网络波动保护机制，自动重连保障游戏连接稳定
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">按时计费如何计算？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            雷神加速器采用分钟级精确计时：<br><br>
+                            ① <strong>计时规则</strong>：从加速开始计时，暂停即停计时<br>
+                            ② <strong>费用标准</strong>：¥0.5/小时，折合每分钟不到1分钱<br>
+                            ③ <strong>暂停不计</strong>：退出游戏或暂停加速，时长自动暂停<br>
+                            ④ <strong>透明消费</strong>：随时查看剩余时长，消费明细一目了然
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">主机游戏如何加速？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            雷神加速器支持PS/Xbox/Switch全系主机加速：<br><br>
+                            ① <strong>路由器加速</strong>：将加速器部署在路由器，所有连接设备自动加速<br>
+                            ② <strong>手机热点加速</strong>：手机开启加速后共享热点给主机<br>
+                            ③ <strong>NN交换机加速</strong>：支持NN端游戏，主机直连加速<br>
+                            ④ <strong>全服支持</strong>：日服/美服/欧服/港服/东南亚服全覆盖
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">支持Mac系统吗？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            是的，雷神加速器完美支持macOS系统：<br><br>
+                            ① <strong>原生支持</strong>：提供macOS 11+原生客户端<br>
+                            ② <strong>功能完整</strong>：与Windows版功能一致，支持所有游戏<br>
+                            ③ <strong>七端互通</strong>：Mac/Windows/Android/iOS时长通用<br>
+                            ④ <strong>流畅体验</strong>：针对Mac优化，资源占用低，续航友好
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">如何领取免费时长？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            多种方式获取免费加速时长：<br><br>
+                            ① <strong>新用户礼</strong>：下载即送24小时免费体验<br>
+                            ② <strong>首次充值</strong>：首充任意金额额外赠送双倍时长<br>
+                            ③ <strong>邀请好友</strong>：邀请1位好友各得10小时免费时长<br>
+                            ④ <strong>每日签到</strong>：App签到可领取时长碎片，累积兑换
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">加速器会影响游戏安全吗？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            雷神加速器完全安全，不会影响游戏账号安全：<br><br>
+                            ① <strong>本地运行</strong>：纯本地加速，不读取/上传游戏数据<br>
+                            ② <strong>银行级加密</strong>：全程数据加密传输，防止信息泄露<br>
+                            ③ <strong>官方认证</strong>：3DM等权威游戏媒体推荐<br>
+                            ④ <strong>海量用户</strong>：2500万+玩家使用，从无账号安全问题
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">支持同时加速多款游戏吗？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            支持多种加速模式：<br><br>
+                            ① <strong>智能加速</strong>：自动识别当前运行的游戏并加速<br>
+                            ② <strong>预下载加速</strong>：支持游戏预下载加速，加快更新速度<br>
+                            ③ <strong>多游戏切换</strong>：随时切换加速游戏，无需重新连接<br>
+                            ④ <strong>时长共享</strong>：家庭版支持5台设备同时使用
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">忘记密码怎么办？</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            多种方式找回账号：<br><br>
+                            ① <strong>手机找回</strong>：在登录页面点击"忘记密码"，输入注册手机号重置<br>
+                            ② <strong>微信登录</strong>：支持微信一键登录，无需记忆密码<br>
+                            ③ <strong>QQ登录</strong>：支持QQ账号授权登录<br>
+                            ④ <strong>客服协助</strong>：联系官方客服，提供信息验证后帮您找回
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Platform Downloads -->
+    <section class="platforms">
+        <div class="container">
+            <h2 class="section-title">多平台下载</h2>
+            <p class="section-subtitle">支持Windows/Mac/Android/iOS/主机全平台</p>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">🪟</div>
+                    <h3 class="platform-name">Windows版</h3>
+                    <p class="platform-version">v3.2.1 | Win10 (1909+) 及以上</p>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="platform-btn">立即下载</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3 class="platform-name">Mac版</h3>
+                    <p class="platform-version">macOS 11+ 及以上</p>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="platform-btn">立即下载</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🤖</div>
+                    <h3 class="platform-name">Android版</h3>
+                    <p class="platform-version">Android 6.0+ | APK安装</p>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968545_583" class="platform-btn">立即下载</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3 class="platform-name">iOS版</h3>
+                    <p class="platform-version">iOS 13+ | App Store</p>
+                    <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="platform-btn">App Store</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://leigod.com" target="_blank">官方网站</a>
+                    <a href="https://leigod.com/help" target="_blank">帮助中心</a>
+                    <a href="https://leigod.com/about" target="_blank">关于我们</a>
+                    <a href="https://leigod.com/privacy" target="_blank">隐私政策</a>
+                    <a href="https://leigod.com/terms" target="_blank">用户协议</a>
+                    <a href="https://leigod.com/contact" target="_blank">联系我们</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2024 雷神（武汉）网络技术有限公司 leigod.com 版权所有</p>
+                <p>ICP备案号：鄂ICP备XXXXXXXX号-1 | 增值电信业务经营许可证：XXXXXXXX</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Fixed Bottom Bar -->
+    <div class="fixed-bottom-bar">
+        <span>⚡ 立即下载雷神加速器，告别游戏卡顿</span>
+        <a href="https://download.lianxitg.adseo.com.cn/tgadseo/download.php?id=soft_1780968535_893" class="btn btn-primary">免费下载</a>
+    </div>
+    
+    <!-- Footer Padding for Fixed Bar -->
+    <div class="footer-padding"></div>
+    
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', function() {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = '0';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
