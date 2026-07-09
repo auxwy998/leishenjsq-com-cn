@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leishenjsq.com.cn/sitemap.xml
